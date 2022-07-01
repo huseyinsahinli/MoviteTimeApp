@@ -1,9 +1,9 @@
-import 'package:firebase_islemleri/pages/favorite_page.dart';
-import 'package:firebase_islemleri/pages/home_page.dart';
-import 'package:firebase_islemleri/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 
-import '../core/constants/app_constants.dart';
+import '../../core/constants/app_constants.dart';
+import '../favorite_page/favorite_page.dart';
+import '../home_page/home_page.dart';
+import '../profile_page/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key, required this.title}) : super(key: key);

@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_islemleri/pages/favorite_page.dart';
-import 'package:firebase_islemleri/pages/user/login_page.dart';
-import 'package:firebase_islemleri/pages/user/reset_page.dart';
+import 'package:firebase_islemleri/view/favorite_page/favorite_page.dart';
+import 'package:firebase_islemleri/view/login_page/login_page.dart';
+import 'package:firebase_islemleri/view/password_reset_page/reset_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../core/constants/app_constants.dart';
+import '../../core/constants/app_constants.dart';
 
 class ProfilePage extends StatefulWidget {
   ProfilePage({Key? key}) : super(key: key);
