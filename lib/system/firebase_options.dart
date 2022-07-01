@@ -16,6 +16,25 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 /// );
 /// ```
 class DefaultFirebaseOptions {
+  static FirebaseOptions web = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY'] ?? 'API_KEY_NOT_FOUND',
+    appId: dotenv.env['FIREBASE_APPID'] ?? 'APP_ID_NOT_FOUND',
+    messagingSenderId: dotenv.env['FIRE_BASE_MESSAGING'] ?? 'NOT_FOUND',
+    projectId: dotenv.env['FIRE_BASE_PROJECTID'] ?? 'PROJECT_ID_NOT_FOUND',
+    authDomain: dotenv.env['FIRE_BASE_AUTHDOMAIN'] ?? 'AUTH_DOMAIN_NOT_FOUND',
+    storageBucket:
+        dotenv.env['FIRE_BASE_STORAGEBUCKET'] ?? 'STORAGEBUCKET_NOT_FOUND',
+  );
+
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY'] ?? 'API_KEY_NOT_FOUND',
+    appId: dotenv.env['FIREBASE_APPID'] ?? 'APP_ID_NOT_FOUND',
+    messagingSenderId: dotenv.env['FIRE_BASE_MESSAGING'] ?? 'NOT_FOUND',
+    projectId: dotenv.env['FIRE_BASE_PROJECTID'] ?? 'PROJECT_ID_NOT_FOUND',
+    authDomain: dotenv.env['FIRE_BASE_AUTHDOMAIN'] ?? 'AUTH_DOMAIN_NOT_FOUND',
+    storageBucket:
+        dotenv.env['FIRE_BASE_STORAGEBUCKET'] ?? 'STORAGEBUCKET_NOT_FOUND',
+  );
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
       return web;
@@ -40,24 +59,4 @@ class DefaultFirebaseOptions {
       'DefaultFirebaseOptions are not supported for this platform.',
     );
   }
-
-  static FirebaseOptions web = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY'] ?? 'API_KEY_NOT_FOUND',
-    appId: dotenv.env['FIREBASE_APPID'] ?? 'APP_ID_NOT_FOUND',
-    messagingSenderId: dotenv.env['FIRE_BASE_MESSAGING'] ?? 'NOT_FOUND',
-    projectId: dotenv.env['FIRE_BASE_PROJECTID'] ?? 'PROJECT_ID_NOT_FOUND',
-    authDomain: dotenv.env['FIRE_BASE_AUTHDOMAIN'] ?? 'AUTH_DOMAIN_NOT_FOUND',
-    storageBucket:
-        dotenv.env['FIRE_BASE_STORAGEBUCKET'] ?? 'STORAGEBUCKET_NOT_FOUND',
-  );
-
-  static FirebaseOptions android = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY'] ?? 'API_KEY_NOT_FOUND',
-    appId: dotenv.env['FIREBASE_APPID'] ?? 'APP_ID_NOT_FOUND',
-    messagingSenderId: dotenv.env['FIRE_BASE_MESSAGING'] ?? 'NOT_FOUND',
-    projectId: dotenv.env['FIRE_BASE_PROJECTID'] ?? 'PROJECT_ID_NOT_FOUND',
-    authDomain: dotenv.env['FIRE_BASE_AUTHDOMAIN'] ?? 'AUTH_DOMAIN_NOT_FOUND',
-    storageBucket:
-        dotenv.env['FIRE_BASE_STORAGEBUCKET'] ?? 'STORAGEBUCKET_NOT_FOUND',
-  );
 }

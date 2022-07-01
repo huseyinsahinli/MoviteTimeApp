@@ -1,8 +1,9 @@
 import 'package:firebase_islemleri/pages/favorite_page.dart';
 import 'package:firebase_islemleri/pages/home_page.dart';
 import 'package:firebase_islemleri/pages/profile_page.dart';
-import 'package:firebase_islemleri/constants/constants.dart';
 import 'package:flutter/material.dart';
+
+import '../core/constants/app_constants.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key, required this.title}) : super(key: key);
@@ -56,7 +57,7 @@ class _MainPageState extends State<MainPage> {
         child: BottomNavigationBar(
           showSelectedLabels: true,
           showUnselectedLabels: false,
-          backgroundColor: Constants.mainColor,
+          backgroundColor: AppConstants.mainColor,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),

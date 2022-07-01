@@ -1,12 +1,13 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_islemleri/constants/constants.dart';
 import 'package:firebase_islemleri/pages/favorite_page.dart';
 import 'package:firebase_islemleri/pages/user/login_page.dart';
 import 'package:firebase_islemleri/pages/user/reset_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../core/constants/app_constants.dart';
 
 class ProfilePage extends StatefulWidget {
   ProfilePage({Key? key}) : super(key: key);
@@ -43,16 +44,16 @@ class _ProfilePageState extends State<ProfilePage> {
         backgroundColor: const Color(0xff232323),
         title: Text(
           "Profile".toUpperCase(),
-          style: Constants.mainTitleStyle,
+          style: AppConstants.mainTitleStyle,
         ),
         centerTitle: true,
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Constants.mainColor,
+        color: AppConstants.mainColor,
         child: Padding(
-          padding: Constants.profilePagePadding,
+          padding: AppConstants.profilePagePadding,
           child: Column(
             children: [
               SizedBox(
@@ -63,7 +64,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 75,
               ),
               Padding(
-                padding: Constants.mediumVerticalPadding,
+                padding: AppConstants.mediumVerticalPadding,
                 child: userCheck
                     ? Text(
                         "${auth.currentUser?.email}",
@@ -76,16 +77,16 @@ class _ProfilePageState extends State<ProfilePage> {
                     : Text(""),
               ),
               createButton("Invite Friends", const Icon(Icons.person_add),
-                  Constants.mainColor, favoriteMovies),
+                  AppConstants.mainColor, favoriteMovies),
               createButton(
                   "Reset Password",
                   const Icon(Icons.password_outlined),
-                  Constants.mainColor,
+                  AppConstants.mainColor,
                   resetPassword),
               createButton("Delete Account", const Icon(Icons.delete),
-                  Constants.mainColor, deleteAccount),
+                  AppConstants.mainColor, deleteAccount),
               createButton("Logout", const Icon(Icons.login_outlined),
-                  Constants.mainColor, signOut),
+                  AppConstants.mainColor, signOut),
             ],
           ),
         ),
@@ -120,7 +121,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   Center(
                     child: CircularProgressIndicator(
-                      color: Constants.mainColor,
+                      color: AppConstants.mainColor,
                     ),
                   ),
                 ],

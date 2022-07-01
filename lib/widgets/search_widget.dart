@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/constants.dart';
+import '../core/constants/app_constants.dart';
 import '../pages/info_page.dart';
 import '../utils/model/movie.dart';
 import '../utils/services/api_service.dart';
@@ -37,7 +37,7 @@ class SearchMovie extends SearchDelegate {
     return Container(
       height: double.infinity,
       width: double.infinity,
-      color: Constants.mainColor,
+      color: AppConstants.mainColor,
       child: ListView(
         shrinkWrap: true,
         children: [
@@ -134,7 +134,7 @@ class SearchMovie extends SearchDelegate {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Constants.mainColor,
+      color: AppConstants.mainColor,
       child: Center(
         child: Text("Search Movie",
             style: GoogleFonts.openSans(

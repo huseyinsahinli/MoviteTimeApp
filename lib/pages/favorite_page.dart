@@ -1,6 +1,5 @@
+import 'package:firebase_islemleri/core/constants/app_constants.dart';
 import 'package:flutter/material.dart';
-
-import '../constants/constants.dart';
 
 class FavoriteMoviesPage extends StatelessWidget {
   const FavoriteMoviesPage({Key? key}) : super(key: key);
@@ -9,18 +8,18 @@ class FavoriteMoviesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Constants.mainColor,
+        backgroundColor: AppConstants.mainColor,
         elevation: 12,
         title: Text(
           "Favorite Movies List".toUpperCase(),
-          style: Constants.mainTitleStyle,
+          style: AppConstants.mainTitleStyle,
         ),
         centerTitle: true,
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Constants.mainColor,
+        color: AppConstants.mainColor,
         child: Text("asdgasdgas"),
       ),
     );

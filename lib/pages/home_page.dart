@@ -1,16 +1,10 @@
-import 'dart:io';
-
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_islemleri/pages/info_page.dart';
 import 'package:firebase_islemleri/utils/services/api_service.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../constants/constants.dart';
+import '../core/constants/app_constants.dart';
 import '../utils/model/movie.dart';
 import '../widgets/search_widget.dart';
 
@@ -36,10 +30,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 12,
-        backgroundColor: Constants.mainColor,
+        backgroundColor: AppConstants.mainColor,
         title: Text(
           "Movie Time".toUpperCase(),
-          style: Constants.mainTitleStyle,
+          style: AppConstants.mainTitleStyle,
         ),
         centerTitle: true,
         actions: [
@@ -51,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Container(
-        color: Constants.mainColor,
+        color: AppConstants.mainColor,
         child: ListView(
           shrinkWrap: true,
           children: [
@@ -67,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Text(
                         "Now Playing".toUpperCase(),
-                        style: Constants.pageTitleStyle,
+                        style: AppConstants.pageTitleStyle,
                         textAlign: TextAlign.left,
                       ),
                     ],
@@ -161,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Text(
                         "Upcoming".toUpperCase(),
-                        style: Constants.pageTitleStyle,
+                        style: AppConstants.pageTitleStyle,
                         textAlign: TextAlign.left,
                       ),
                     ],

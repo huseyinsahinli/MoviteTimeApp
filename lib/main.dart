@@ -14,6 +14,7 @@ void main() async {
       SystemUiOverlayStyle(statusBarColor: Colors.transparent));
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
+    name: 'flutter-firebase-dersleri',
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(MyApp());
@@ -29,7 +30,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Material App',
+        title: 'Movi Time',
         theme: ThemeData(
           brightness: Brightness.dark,
           fontFamily: GoogleFonts.openSans().fontFamily,

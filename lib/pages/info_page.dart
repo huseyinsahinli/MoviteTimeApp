@@ -15,7 +15,7 @@ class InfoPage extends StatelessWidget {
         backgroundColor: const Color(0xff232323),
         title: Text(
           movie.title,
-          style: Constants.mainTitleStyle,
+          style: AppConstants.mainTitleStyle,
         ),
         centerTitle: true,
         actions: [
@@ -28,7 +28,7 @@ class InfoPage extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Constants.mainColor,
+        color: AppConstants.mainColor,
         child: ListView(
           shrinkWrap: true,
           children: [
