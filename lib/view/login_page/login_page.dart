@@ -1,12 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_islemleri/pages/user/register_page.dart';
-import 'package:firebase_islemleri/pages/user/reset_page.dart';
+import 'package:firebase_islemleri/view/register_page/register_page.dart';
+import 'package:firebase_islemleri/view/password_reset_page/reset_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../main_page.dart';
+import '../main_page/main_page.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);

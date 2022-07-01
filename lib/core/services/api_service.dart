@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-import '../model/movie.dart';
+import '../models/movie_model.dart';
 
 class ApiService {
   final Dio _dio = Dio();

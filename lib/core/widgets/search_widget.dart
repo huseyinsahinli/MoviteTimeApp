@@ -2,10 +2,10 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../core/constants/app_constants.dart';
-import '../pages/info_page.dart';
-import '../utils/model/movie.dart';
-import '../utils/services/api_service.dart';
+import '../constants/app_constants.dart';
+import '../../view/info_page/info_page.dart';
+import '../models/movie_model.dart';
+import '../services/api_service.dart';
 
 class SearchMovie extends SearchDelegate {
   ApiService _searchMovieList = ApiService();

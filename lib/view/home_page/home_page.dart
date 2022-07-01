@@ -1,12 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:firebase_islemleri/pages/info_page.dart';
-import 'package:firebase_islemleri/utils/services/api_service.dart';
+import 'package:firebase_islemleri/view/info_page/info_page.dart';
+import 'package:firebase_islemleri/core/services/api_service.dart';
 import 'package:flutter/material.dart';
 
-import '../core/constants/app_constants.dart';
-import '../utils/model/movie.dart';
-import '../widgets/search_widget.dart';
+import '../../core/constants/app_constants.dart';
+import '../../core/models/movie_model.dart';
+import '../../core/widgets/search_widget.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);

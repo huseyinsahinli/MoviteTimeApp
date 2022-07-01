@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:firebase_islemleri/constants/constants.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/model/movie.dart';
+import '../../core/constants/app_constants.dart';
+import '../../core/models/movie_model.dart';
 
 class InfoPage extends StatelessWidget {
   final Movie movie;
