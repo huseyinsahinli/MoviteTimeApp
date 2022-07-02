@@ -10,6 +10,11 @@ class AppConstants {
     fontWeight: FontWeight.bold,
     color: Colors.white,
   );
+  static const movieTitleTextStyle = TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+    fontSize: 18,
+  );
   static final pageTitleStyle = GoogleFonts.openSans(
     fontSize: 18,
     fontWeight: FontWeight.bold,

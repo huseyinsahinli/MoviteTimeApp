@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../core/constants/app_constants.dart';
 import '../favorite_page/favorite_page.dart';
-import '../home_page/home_page.dart';
+
+import '../home_page/view/home_view.dart';
 import '../profile_page/profile_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -61,7 +62,7 @@ class _MainPageState extends State<MainPage> {
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
-              label: "Main",
+              label: "Home",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border_outlined),
