@@ -8,4 +8,6 @@ class AppPadding {
     bottom: 15,
     left: 15,
   );
+  static const registerPagePadding =
+      EdgeInsets.symmetric(horizontal: 32, vertical: 32);
 }
